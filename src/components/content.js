@@ -22,7 +22,7 @@ const ContentWithImage = () => {
           }}
         >
           <div className="md:w-1/2 text-center md:text-left ">
-            <p className="text-xl font-bold mb-4 italic text-blue-300">
+            <p className="text-xl font-bold mb-4 italic text-green-300">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
@@ -51,7 +51,7 @@ const ContentWithImage = () => {
               profesional dengan pengalaman yang luas dalam bidang tertentu, dan
               bekerja keras untuk mencapai hasil yang luar biasa.
             </p>
-            <button class="overflow-hidden relative w-36 p-2 h-12 bg-blue-500 text-white border-none rounded-md text-xl font-bold cursor-pointer  z-0 group">
+            <button class="overflow-hidden relative w-36 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer  z-0 group">
               Resume
               <span class="absolute w-40 h-32 -top-8 -left-2 bg-green-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
               <span class="absolute w-40 h-32 -top-8 -left-2 bg-green-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>

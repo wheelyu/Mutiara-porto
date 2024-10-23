@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+// import { TypeAnimation } from "react-type-animation";
+// import { motion } from "framer-motion";
 // Jika Anda ingin mengimpor modul tambahan
 
 const About = () => {

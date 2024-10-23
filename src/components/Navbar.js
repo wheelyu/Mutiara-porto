@@ -38,7 +38,7 @@ const Navbar = () => {
             className={`transition-all  py-2 rounded ${
               isScrolled
                 ? "text-white hover-lines px-5  "
-                : "text-blue-500 px-3 hover-line"
+                : "text-green-500 px-3 hover-line"
             }`}
           >
             Home
@@ -48,7 +48,7 @@ const Navbar = () => {
             className={`transition-all px-3 py-2 ${
               isScrolled
                 ? "text-white hover-lines"
-                : "text-blue-500 px-3 hover-line"
+                : "text-green-500 px-3 hover-line"
             }`}
           >
             About
@@ -58,7 +58,7 @@ const Navbar = () => {
             className={`transition-all px-3 py-2 ${
               isScrolled
                 ? "text-white hover-lines"
-                : "text-blue-500 px-3 hover-line"
+                : "text-green-500 px-3 hover-line"
             }`}
           >
             Contact
