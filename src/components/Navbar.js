@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="hidden md:flex space-x-6">
           <a
-            href="/"
+            href="#home"
             className={`transition-all  py-2 rounded ${
               isScrolled
                 ? "text-white hover-lines px-5  "
@@ -44,7 +44,7 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/about"
+            href="#about"
             className={`transition-all px-3 py-2 ${
               isScrolled
                 ? "text-white hover-lines"
@@ -54,19 +54,19 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="/contact"
+            href="#skill"
             className={`transition-all px-3 py-2 ${
               isScrolled
                 ? "text-white hover-lines"
                 : "text-green-500 px-3 hover-line"
             }`}
           >
-            Contact
+            Skill
           </a>
         </div>
         <div className="hidden md:flex space-x-6">
           <a
-            href=""
+            href="https://www.instagram.com/tiarapnd_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             className={`text-xl ${
               isScrolled
                 ? "text-white hover:text-pink-600 transition-all duration-300 hover:bg-white px-2 py-1 rounded-full"

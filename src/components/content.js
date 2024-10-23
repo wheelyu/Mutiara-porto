@@ -2,8 +2,14 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 const ContentWithImage = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "CV.pdf";
+    link.download = "CV.pdf";
+    link.click();
+  };
   return (
-    <div className="bg-slate-100 h-screen overflow-hidden ">
+    <div className="bg-slate-100 h-screen overflow-hidden " id="home">
       <div className="flex flex-col md:flex-row items-center justify-between p-6 md:p-40 mx-20 fixed z-0">
         {/* Teks di sebelah kiri */}
         <motion.div
@@ -46,17 +52,23 @@ const ContentWithImage = () => {
               />
             </p>
             <h2 className="text-4xl font-bold mb-4">I am Mutiara Pandiangan</h2>
-            <p className="text-gray-700 mb-6 w-max-md">
-              Ini adalah deskripsi singkat tentang orang ini. Dia adalah seorang
-              profesional dengan pengalaman yang luas dalam bidang tertentu, dan
-              bekerja keras untuk mencapai hasil yang luar biasa.
+            <p className="text-gray-700 mb-6 w-max-md text-justify">
+              Saya sebagai mahasiswa aktif Insititut Teknologi Sumatera Program
+              Studi Rekayasa Kehutanan yang memiliki pemahaman cara pandang
+              holistik kehutanan baik dari segi ekologi, ekonomi dan sosial.
+              Saya aktif dalam kegiatan organisasi maupun volunteers, yang
+              memungkinkan melatih soft skill maupun hard skill agar mampu
+              merencanakan dan memprioritaskan aktivitas kerja secara efektif.
             </p>
-            <button class="overflow-hidden relative w-36 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer  z-0 group">
+            <button
+              className="overflow-hidden relative w-36 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer z-0 group active:translate-y-[5px] transition-all ease-in-out duration-200"
+              onClick={handleDownload}
+            >
               Resume
-              <span class="absolute w-40 h-32 -top-8 -left-2 bg-green-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
-              <span class="absolute w-40 h-32 -top-8 -left-2 bg-green-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
-              <span class="absolute w-40 h-32 -top-8 -left-2 bg-green-700 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
-              <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 ">
+              <span className="absolute w-40 h-32 -top-8 -left-2 bg-green-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
+              <span className="absolute w-40 h-32 -top-8 -left-2 bg-green-400 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-left"></span>
+              <span className="absolute w-40 h-32 -top-8 -left-2 bg-green-700 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-left"></span>
+              <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 ">
                 Download
               </span>
             </button>

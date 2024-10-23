@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Swiper from "./swiper";
 // import { TypeAnimation } from "react-type-animation";
 // import { motion } from "framer-motion";
 // Jika Anda ingin mengimpor modul tambahan
@@ -14,13 +15,26 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="bg-green-800 h-screen relative z-20 ">
-      <div data-aos="fade-up" className="">
+    <div className="bg-green-800 h-screen relative z-20 " id="about">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-ease="ease-in-out"
+        className=""
+      >
         <div className="h-36"></div>
-        <h1 className="text-9xl font-bold text-slate-900 mt">About Me</h1>
+        <h1 className="text-9xl font-bold text-slate-900 mt">My Experience</h1>
         <h1 className="text-9xl font-bold text-slate-300 relative top-[-120px] left-[-10px]">
-          About Me
+          My Experience
         </h1>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        data-aos-ease="ease-in-out"
+      >
+        <Swiper />
       </div>
     </div>
   );
