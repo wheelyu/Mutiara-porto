@@ -26,7 +26,7 @@ const ContentWithImage = () => {
             },
           }}
         >
-          <div className="w-60 md:w-96 mt-2 md:mt-0 ">
+          <div className="w-40 md:w-96 mt-2 md:mt-0 ">
             <div
               className="overflow-hidden"
               style={{
@@ -83,10 +83,10 @@ const ContentWithImage = () => {
                 repeat={Infinity}
               />
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            <h2 className="text-xl md:text-4xl font-bold mb-4">
               I am Mutiara Pandiangan
             </h2>
-            <p className="text-gray-700 mb-6 w-3/4 md:w-full mx-auto md:w-max-md text-justify">
+            <p className="text-gray-700 mb-6 w-3/4 md:w-full mx-auto md:w-max-md text-justify text-xs">
               Saya sebagai mahasiswa aktif Insititut Teknologi Sumatera Program
               Studi Rekayasa Kehutanan yang memiliki pemahaman cara pandang
               holistik kehutanan baik dari segi ekologi, ekonomi dan sosial.

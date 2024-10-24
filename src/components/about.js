@@ -15,7 +15,7 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="bg-green-800 h-screen relative z-20 top-[-2px]" id="about">
+    <div className="bg-green-800 h-screen relative z-20 top-[-20px]" id="about">
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
