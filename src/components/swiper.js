@@ -55,19 +55,19 @@ const SwiperCard = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-slate-100 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+            <div className="bg-slate-100 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row ">
               {/* Kontainer gambar, diatur ukurannya dan tidak memenuhi seluruh card */}
               <div className="w-full md:w-1/2  p-4 flex justify-center items-center">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="max-w-full  md:max-h-80 max-h-56 object-cover"
+                  className="max-w-full md:max-h-96 md:min-h-96 max-h-56 object-cover"
                 />
               </div>
               {/* Kontainer teks */}
-              <div className="w-full min-h-96 md:w-1/2 p-4 flex flex-col text-justify justify-center">
+              <div className="w-full min-h-72 max-h-72 md:w-1/2 p-4 flex flex-col text-justify justify-center">
                 <h2 className="text-xl font-bold mb-2">{slide.title}</h2>
-                <p className="text-gray-600">{slide.description}</p>
+                <p className="text-gray-600 text-sm">{slide.description}</p>
               </div>
             </div>
           </SwiperSlide>
