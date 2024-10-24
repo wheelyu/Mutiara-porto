@@ -37,6 +37,7 @@ function App() {
     <div className="App">
       <Navbar />
       <ContentWithImage />
+
       <CustomShapeDivider />
       <About />
       <Skill />

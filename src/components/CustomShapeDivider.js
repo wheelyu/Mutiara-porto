@@ -28,7 +28,7 @@ const CustomShapeDivider = () => {
   }, []);
 
   return (
-    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform rotate-180 bg-transparent">
+    <div className="relative bottom-0 left-0 w-full overflow-hidden leading-none transform rotate-180 bg-transparent">
       <svg
         className="relative block h-36 transform rotate-y-180 animate-slide-up"
         data-name="Layer 1"
