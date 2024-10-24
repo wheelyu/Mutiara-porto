@@ -178,7 +178,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="example: John Doe"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -192,7 +192,7 @@ const ContactPage = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="example: 7sC5A@example.com"
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -206,7 +206,7 @@ const ContactPage = () => {
                 <input
                   type="number"
                   name="phone"
-                  placeholder="Your Phone"
+                  placeholder="example: 08123456789"
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -220,7 +220,7 @@ const ContactPage = () => {
                 <textarea
                   name="message"
                   rows="4"
-                  placeholder="Your Message"
+                  placeholder="example: Hi, I'm interested in your product..."
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
