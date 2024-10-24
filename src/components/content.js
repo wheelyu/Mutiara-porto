@@ -9,8 +9,40 @@ const ContentWithImage = () => {
     link.click();
   };
   return (
-    <div className="bg-slate-100 h-screen overflow-hidden " id="home">
-      <div className="flex flex-col md:flex-row items-center justify-between p-6 md:p-40 mx-20 fixed z-0">
+    <div className="bg-slate-100 h-screen overflow-hidden  " id="home">
+      <div className="flex flex-col md:flex-row items-center justify-between pt-20 md:p-40 mx-auto md:mx-20 fixed z-0">
+        <motion.div
+          className="box md:hidden flex"
+          initial={{ opacity: 0, scale: 0.5, rotate: 300 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{
+            duration: 1,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+        >
+          <div className="w-60 md:w-96 mt-2 md:mt-0 ">
+            <div
+              className="overflow-hidden"
+              style={{
+                borderRadius: "20%",
+                rotate: "20deg",
+                boxShadow: "20px 12px 25px 1px rgba(0, 0, 0, 0.4)",
+              }}
+            >
+              <img
+                src="muti.jpg"
+                alt="Foto Profil"
+                className="w-full object-cover rounded-lg shadow-md scale-110 transform transition-transform duration-500 hover:scale-150 hover:cursor-pointer"
+              />
+            </div>
+          </div>
+        </motion.div>
         {/* Teks di sebelah kiri */}
         <motion.div
           className="box"
@@ -27,8 +59,8 @@ const ContentWithImage = () => {
             },
           }}
         >
-          <div className="md:w-1/2 text-center md:text-left ">
-            <p className="text-xl font-bold mb-4 italic text-green-300">
+          <div className="md:w-1/2 text-center  md:text-left">
+            <p className="text-xl font-bold mb-4 italic text-green-300 mt-10">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
@@ -51,14 +83,13 @@ const ContentWithImage = () => {
                 repeat={Infinity}
               />
             </p>
-            <h2 className="text-4xl font-bold mb-4">I am Mutiara Pandiangan</h2>
-            <p className="text-gray-700 mb-6 w-max-md text-justify">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">
+              I am Mutiara Pandiangan
+            </h2>
+            <p className="text-gray-700 mb-6 w-3/4 md:w-full mx-auto md:w-max-md text-justify">
               Saya sebagai mahasiswa aktif Insititut Teknologi Sumatera Program
               Studi Rekayasa Kehutanan yang memiliki pemahaman cara pandang
               holistik kehutanan baik dari segi ekologi, ekonomi dan sosial.
-              Saya aktif dalam kegiatan organisasi maupun volunteers, yang
-              memungkinkan melatih soft skill maupun hard skill agar mampu
-              merencanakan dan memprioritaskan aktivitas kerja secara efektif.
             </p>
             <button
               className="overflow-hidden relative w-36 p-2 h-12 bg-green-500 text-white border-none rounded-md text-xl font-bold cursor-pointer z-0 group active:translate-y-[5px] transition-all ease-in-out duration-200"
@@ -76,7 +107,7 @@ const ContentWithImage = () => {
         </motion.div>
         {/* Foto di sebelah kanan */}
         <motion.div
-          className="box"
+          className="box hidden md:flex"
           initial={{ opacity: 0, scale: 0.5, rotate: 300 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{
@@ -90,7 +121,7 @@ const ContentWithImage = () => {
             },
           }}
         >
-          <div className="w-96 mt-6 md:mt-0 ">
+          <div className="w-60 md:w-96 mt-10 md:mt-0 ">
             <div
               className="overflow-hidden"
               style={{
@@ -102,7 +133,7 @@ const ContentWithImage = () => {
               <img
                 src="muti.jpg"
                 alt="Foto Profil"
-                className="w-full  object-cover rounded-lg shadow-md scale-110 transform transition-transform duration-500 hover:scale-150 hover:cursor-pointer"
+                className="w-full object-cover rounded-lg shadow-md scale-110 transform transition-transform duration-500 hover:scale-150 hover:cursor-pointer"
               />
             </div>
           </div>

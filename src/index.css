@@ -62,3 +62,7 @@ code {
     transform: rotate(0.5turn);
   }
 }
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

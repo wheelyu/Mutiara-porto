@@ -15,7 +15,7 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="bg-green-800 h-screen relative z-20 " id="about">
+    <div className="bg-green-800 h-screen relative z-20 top-[-2px]" id="about">
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
@@ -23,8 +23,10 @@ const About = () => {
         className=""
       >
         <div className="h-36"></div>
-        <h1 className="text-9xl font-bold text-slate-900 mt">My Experience</h1>
-        <h1 className="text-9xl font-bold text-slate-300 relative top-[-120px] left-[-10px]">
+        <h1 className="md:text-9xl text-3xl font-bold text-slate-900 mt">
+          My Experience
+        </h1>
+        <h1 className="md:text-9xl text-3xl font-bold text-slate-300 relative top-[-40px] md:top-[-120px] md:left-[-10px]">
           My Experience
         </h1>
       </div>
